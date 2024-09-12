@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import WebApp from '@twa-dev/sdk'
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+WebApp.showAlert(`Hello World!`)
 </script>
 
 <template>
